@@ -1,7 +1,7 @@
 
 # 🧑‍💻 Aman Antuley - Portfolio v3.0
 
-![Aman Antuley Banner](/docs/hero.png)
+![Aman Antuley Banner](/public/main.png)
 
 Welcome to the third iteration of my personal developer portfolio website, built using **Next.js 14**, **Tailwind CSS**, and **TypeScript**. This site is a reflection of my skills, projects, achievements, and passion for **data analytics**, **AI/ML**, and **front-end development**.
 
