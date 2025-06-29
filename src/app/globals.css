@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 270 90% 96%;
+    --foreground: 270 40% 10%;
+    --card: 270 90% 98%;
+    --card-foreground: 270 40% 10%;
+    --popover: 270 90% 98%;
+    --popover-foreground: 270 40% 10%;
+    --primary: 270 65% 50%;
+    --primary-foreground: 270 90% 98%;
+    --secondary: 270 80% 92%;
+    --secondary-foreground: 270 50% 20%;
+    --muted: 270 80% 95%;
+    --muted-foreground: 270 20% 40%;
+    --accent: 300 60% 60%;
+    --accent-foreground: 300 40% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 270 60% 88%;
+    --input: 270 60% 88%;
+    --ring: 270 65% 50%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 270 20% 5%;
+    --foreground: 270 80% 96%;
+    --card: 270 20% 9%;
+    --card-foreground: 270 80% 96%;
+    --popover: 270 20% 9%;
+    --popover-foreground: 270 80% 96%;
+    --primary: 270 75% 70%;
+    --primary-foreground: 270 20% 10%;
+    --secondary: 270 20% 15%;
+    --secondary-foreground: 270 80% 96%;
+    --muted: 270 20% 12%;
+    --muted-foreground: 270 15% 60%;
+    --accent: 280 65% 65%;
+    --accent-foreground: 280 40% 10%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 270 20% 17%;
+    --input: 270 20% 17%;
+    --ring: 270 75% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-attachment: fixed;
+  }
+  .dark body {
+    background-image: 
+      radial-gradient(circle at 15% 15%, hsl(var(--primary) / 0.25), transparent 40%),
+      radial-gradient(circle at 85% 85%, hsl(var(--accent) / 0.25), transparent 40%);
+  }
+}

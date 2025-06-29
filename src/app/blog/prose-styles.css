@@ -1,0 +1,86 @@
+.prose {
+    @apply text-foreground;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+    @apply font-headline text-foreground mt-8 mb-4;
+}
+
+.prose p {
+    @apply mb-4 leading-relaxed;
+}
+
+.prose a {
+    @apply text-primary underline hover:no-underline;
+}
+
+.prose blockquote {
+    @apply border-l-4 border-primary bg-secondary/30 p-4 my-6 italic;
+}
+
+.prose code {
+    @apply bg-muted text-foreground font-code rounded px-1.5 py-1 text-sm;
+}
+
+.prose pre {
+    @apply bg-card p-4 rounded-lg overflow-x-auto my-6;
+}
+
+.prose pre code {
+    @apply bg-transparent p-0;
+}
+
+.prose ul, .prose ol {
+    @apply my-4 pl-6;
+}
+
+.prose li {
+    @apply mb-2;
+}
+
+.prose ul > li {
+  position: relative;
+}
+
+.prose ul > li::before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 0.625rem;
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 50%;
+    @apply bg-primary;
+}
+
+.prose img {
+    @apply rounded-lg my-6;
+}
+
+.dark .prose {
+    @apply text-foreground;
+}
+
+.dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4, .dark .prose h5, .dark .prose h6 {
+    @apply text-foreground;
+}
+
+.dark .prose a {
+    @apply text-primary;
+}
+
+.dark .prose blockquote {
+    @apply border-primary bg-secondary/30;
+}
+
+.dark .prose code {
+    @apply bg-muted text-foreground;
+}
+
+.dark .prose pre {
+    @apply bg-card;
+}
+
+.dark .prose ul > li::before {
+    @apply bg-primary;
+}
